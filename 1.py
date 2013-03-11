@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# http://www.pythonchallenge.com/pc/def/map.html
 
 import string
 
