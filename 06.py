@@ -16,4 +16,7 @@ with zipfile.ZipFile(zipfilename, 'r') as zfile:
         # print "  [%s] >>>\n%s" %(compressed_path, str)
         print zfile.getinfo(compressed_path).comment ,
         # proceed with the next iteration
-        compressed_path = r.findall(str)[0] + '.txt'
+        compressed_path = r.findall(str)[0]
+        if not compressed_path:
+            break
+        compressed_path = compressed_path + '.txt'
